@@ -28,6 +28,8 @@ SQLやPower Query、スクリプトなどを用いて「実務を意識した操
 
 ---
 
+<details>
+<summary>🌱 草の意味（コード風コメント）</summary>
 // 🌱 biz-automation-practice ver.2025.07
 const repo = {
   title: "業務効率化・自動化の練習帳",
@@ -46,3 +48,5 @@ function growGrass() {
 }
 
 growGrass();
+
+</details>
