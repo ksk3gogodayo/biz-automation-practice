@@ -25,3 +25,24 @@ SQLやPower Query、スクリプトなどを用いて「実務を意識した操
 
 このリポジトリは個人の学習・予習を目的としたもので、  
 掲載されているすべてのデータ・コードは架空または自作のものです。
+
+---
+
+// 🌱 biz-automation-practice ver.2025.07
+const repo = {
+  title: "業務効率化・自動化の練習帳",
+  tools: ["SQL", "Power Query", "Python"],
+  concept: "実務を意識して手を動かす草🌱",
+  target: "実践スキル・再現力・説明力の強化",
+  structure: ["SQL演習", "Power Query小技", "自動化スクリプト"],
+  note: "面接でも伝えやすいように意図を整理してます✍️",
+};
+
+function growGrass() {
+  console.log("✅ コード書いた");
+  console.log("✅ 実行してみた");
+  console.log("✅ READMEにも意図を記録");
+  console.log("🌿 草は“ただ生やす”んじゃなくて、意味を込めて育てる");
+}
+
+growGrass();
