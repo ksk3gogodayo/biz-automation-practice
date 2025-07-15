@@ -35,3 +35,5 @@ merged = pd.merge(orders, customers, on="customer_id", how="inner")
 summary = merged.groupby("customer_name")["amount"].sum().reset_index()
 
 print(summary)
+
+📌 補足：Python（pandas）を用いた同様処理も記載中。SQLに加え、処理自動化やデータ活用の視点からも学習を進めています。
