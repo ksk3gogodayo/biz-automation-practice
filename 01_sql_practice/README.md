@@ -14,3 +14,24 @@ SQLの基本構文や集計処理、JOINなどの練習用フォルダです。
 
 📁 データ： `data/` フォルダにCSV入れる予定  
 📝 クエリ： `queries.sql` に保存
+
+---
+
+## Pythonでの同様処理（参考）
+
+SQLのJOINやGROUP BY的な処理は、Python（pandas）でも可能です。  
+以下のサンプルスクリプトでは、2つのCSVデータを結合し、グループ集計しています。
+
+```python
+import pandas as pd
+
+orders = pd.read_csv("orders.csv")
+customers = pd.read_csv("customers.csv")
+
+# JOIN（内部結合）
+merged = pd.merge(orders, customers, on="customer_id", how="inner")
+
+# GROUP BY（合計）
+summary = merged.groupby("customer_name")["amount"].sum().reset_index()
+
+print(summary)
