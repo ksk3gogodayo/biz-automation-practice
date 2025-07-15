@@ -2,7 +2,11 @@
 
 import pandas as pd
 
-df = pd.read_csv("orders.csv")
+# CSVファイル読み込み
+df = pd.read_csv("../01_sql_practice/data/orders.csv")
 
-# SQL: SELECT customer_name, product FROM orders;
-print(df[["customer_name", "product"]])
+# SQLでいう「SELECT customer_name, product FROM orders」
+result = df[["customer_name", "product"]]
+
+# 結果表示
+print(result)
